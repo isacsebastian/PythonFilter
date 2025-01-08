@@ -1,0 +1,31 @@
+# Entornos virtuales
+venv/
+env/
+
+# Archivos y carpetas de configuración local
+*.env
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Archivos de datos
+data/uploaded_files/
+data/processed/
+*.csv
+*.xlsx
+
+# Archivos de exportación
+*.pdf
+
+# Configuración específica del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
+
+# Archivos de depuración
+debug.log

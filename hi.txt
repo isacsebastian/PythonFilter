@@ -1,0 +1,31 @@
+project/
+│
+├── app/                     # Carpeta principal de la aplicación
+│   ├── __init__.py          # Inicialización de la aplicación Flask
+│   ├── routes.py            # Rutas principales (endpoints de la API)
+│   ├── models.py            # Definición de estructuras de datos o modelos
+│   ├── filters.py           # Funciones de filtrado y lógica
+│   ├── utils.py             # Utilidades (generación de PDFs/CSVs, etc.)
+│   ├── static/              # Archivos estáticos
+│   │   ├── css/             # Estilos CSS
+│   │   └── js/              # JavaScript
+│   └── templates/           # Plantillas HTML
+│       ├── base.html        # Plantilla base
+│       ├── index.html       # Página principal (filtros)
+│       ├── results.html     # Página de resultados
+│       └── error.html       # Página de error
+│
+├── data/                    # Datos del sistema
+│   ├── uploaded_files/      # Archivos subidos por los usuarios
+│   ├── processed/           # Resultados procesados (filtrados/exportados)
+│   └── Base.csv             # Archivo CSV base
+│
+├── tests/                   # Pruebas de la aplicación
+│   ├── test_routes.py       # Pruebas para las rutas
+│   └── test_filters.py      # Pruebas para las funciones de filtrado
+│
+├── .env                     # Variables de entorno (configuración sensible)
+├── requirements.txt         # Dependencias del proyecto
+├── config.py                # Configuración de Flask (e.g., rutas, claves)
+├── run.py                   # Punto de entrada para ejecutar la app
+└── README.md                # Documentación del proyecto

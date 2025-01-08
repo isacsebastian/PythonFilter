@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Resultados del Filtrado</h2>
+    {% if data %}
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Vendedor</th>
+                <th>Categoría</th>
+                <th>Material</th>
+                <th>Descripción</th>
+                <th>Mes</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row.cliente }}</td>
+                <td>{{ row.vendedor }}</td>
+                <td>{{ row.categoria }}</td>
+                <td>{{ row.material }}</td>
+                <td>{{ row.descripcion }}</td>
+                <td>{{ row.mes }}</td>
+                <td>{{ row.valor }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No se encontraron resultados.</p>
+    {% endif %}
+    <a href="/">Volver</a>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Filtrar Datos</h2>
+    <form action="/filter" method="post">
+        <label for="cliente_id">Cliente ID:</label>
+        <input type="text" id="cliente_id" name="cliente_id" required>
+
+        <label for="vendedor_id">Vendedor ID:</label>
+        <input type="text" id="vendedor_id" name="vendedor_id" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+            <option value="">Seleccione una categoría</option>
+            <!-- Opciones dinámicas -->
+        </select>
+
+        <label for="mes">Mes:</label>
+        <select id="mes" name="mes">
+            <option value="">Seleccione un mes</option>
+            <!-- Opciones dinámicas -->
+        </select>
+
+        <button type="submit">Filtrar</button>
+    </form>
+</div>
+{% endblock %}
